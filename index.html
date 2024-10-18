@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMM specialist portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+
+    <header class="header">
+        
+        <div class="container">
+            <!-- Header nav -->
+            <div class="header-nav">
+                <a href="#!" class="logo">Vera</a>
+                <nav id="nav "class="nav open">
+                    <!--<ul class="nav-list">
+                        <li class="nav-item"><a href="#!" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">Works</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#!" class="nav-link">Contact</a></li>
+                    </ul>-->
+                   <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./img/icons/nav-open.svg" alt="Nav button">
+                   </button> 
+                </nav>
+            </div>
+            
+        <!-- Header content -->
+
+        <div class="header-row">
+            <div class="header-content" data-aos="fade-up">
+                <h1 class="header-heading">Vera Znobishina<br>SMM specialist and Designer</h1>
+
+                <p>I'm an SMM and Design specialist, living in the Kyiv.</p> 
+            </div>
+
+            <div class="header-img" data-aos="fade-left">
+                <img src="./img/header/Vera.png" class="Vera" alt="Vera">
+            </div>
+        </div>
+
+        </div>
+    </header>
+
+    <section class="services">
+
+        <div class="container">
+
+            <div class="services-row">
+
+                <div class="service-card1" data-aos="fade-down">
+
+                    <img class="service-card1-img" src="./img/services/SMM.svg" alt="SMM Marketing">   
+                    <h3 class="service-card1-title">SMM Marketing</h3>
+                    <p>I create high quality and creative content for SMM advertising</p>    
+                </div>
+
+                <div class="service-card2" data-aos="fade-down">
+                    <img class="service-card2-img" src="./img/services/Designer.svg" alt="UI/UX Design">
+                    <h3 class="service-card2-title">UI/UX Design</h3>
+                    <p>Also I can work well with UI/UX Design</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-title">
+                <h2 class="title-1">Portfolio</h2>
+            </div>
+
+            <div class="project hover-lift" data-aos="flip-up">
+                <video src="./vids/vid1.MOV" id="vid1" width="360" height=""></video>
+
+                <p id="videoMessage1" style="display: none;">Click on the video one more time to play it</p>
+
+                <script>
+                    var viddd1 = document.getElementById("vid1");
+                    var message1 = document.getElementById("videoMessage1");
+
+                    viddd1.addEventListener('ended', () => {
+                        message1.style.display = 'block';
+                    });
+
+                    viddd1.addEventListener('click', () => {
+                        if (viddd1.paused) {
+                        viddd1.play();
+                        message1.style.display = 'none';
+                        } else {
+                            viddd1.pause();
+                        }
+                    });
+                </script>
+
+                <h3 class="project-title"><a href="#!">1</a></h3>
+            </div>
+
+            <div class="project hover-lift" data-aos="flip-up">
+                <video src="./vids/vid2.MOV" id="vid2" width="360" height=""></video>
+
+                <p id="videoMessage2" style="display: none;">Click on the video one more time to play it</p>
+
+                <script>
+                    var viddd2 = document.getElementById("vid2");
+                    var message2 = document.getElementById("videoMessage2");
+
+                    viddd2.addEventListener('ended', () => {
+                        message2.style.display = 'block';
+                    });
+
+                    viddd2.addEventListener('click', () => {
+                        if (viddd2.paused) {
+                        viddd2.play();
+                        message2.style.display = 'none';
+                        } else {
+                            viddd2.pause();
+                        }
+                    });
+                </script>
+
+                <h3 class="project-title"><a href="#!">2</a></h3>
+            </div>
+
+            <div class="project hover-lift" data-aos="fade-down">
+                <video src="./vids/vid3.MOV" id="vid3" width="360" height=""></video>
+
+                <p id="videoMessage3" style="display: none;">Click on the video one more time to play it</p>
+
+                <script>
+                    var viddd3 = document.getElementById("vid3");
+                    var message3 = document.getElementById("videoMessage3");
+
+                    viddd3.addEventListener('ended', () => {
+                        message3.style.display = 'block';
+                    });
+
+                    viddd3.addEventListener('click', () => {
+                        if (viddd3.paused) {
+                        viddd3.play();
+                        message3.style.display = 'none';
+                        } else {
+                            viddd3.pause();
+                        }
+                    });
+                </script>
+
+                <h3 class="project-title"><a href="#!">3</a></h3>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="contacts">
+        <div class="container">
+            <div class="contacts-title">
+                <h2 class="title-1">Contacts</h2>
+            </div>
+            <div class="contacts-content">
+                <p>Want to know or just chat?<br> You are welcome!</p>
+            </div>
+            <div class="contacts-button">
+                <a href="https://t.me/mysmmcases" class="btn">Send massage</a>
+            </div>
+            <div class="contacts-social">
+                <a href="https://www.instagram.com/_vera.znobishina_?igsh=eWQ3MndmbnRxcW5w"><img src="./img/socials/surface1 6.png" alt="Instagram"></a>
+            </div>
+            <div class="contacts-footer">
+                <p>Like me on<br>Instagram</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
